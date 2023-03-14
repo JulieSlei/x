@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'poppins';
+    display: block;
+}
+
+header {
+    display: block;
+    position: relative;
+}
+
+.card {
+    color: #6e6e6e;
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    box-shadow: 1px 1px 3px 1px #999999;
+    border-radius: 10px;
+    left: 10%;
+    
+}
+
+.cardHead {
+    position: relative;
+    background: linear-gradient(90deg, rgba(9,105,191,1) 0%, rgba(0,56,142,1) 66%, rgba(46,67,157,1) 100%);
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardHeadThings {
+    color: white;
+    display: flex;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.name {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+}
+
+.profession {
+    position: absolute;
+    top: 49%;
+    left: 30%;
+}
+
+.womanImg {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    border: 5px white solid;
+    outline: none;
+    box-shadow: 0.5px 0.5px 3px 0.5px #999999;
+}
+
+.sec {
+    position: relative;
+    display: flex;
+}
+
+.aboutMe {
+    position: relative;
+}
+
+.aboutMetxt {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    color: #6e6e6e;
+}
+
+.aboutMepar {
+    position: relative;
+    left: 15%;
+    width: 450px;
+    color: #6e6e6e;
+    font-size: 18px;
+}
+
+.info {
+    position: relative;
+    left: 19%;
+}
+
+.infotable {
+    position: relative;
+    top: 32%;
+    color: #666;
+    font-size: 20px;
+}
+
+.line {
+    position: absolute;
+    border-top: 1px solid #e6e6e6;
+    width: 80%;
+    left: 10%;
+}
+
+.line2 {
+    position: absolute;
+    border-left: 1px solid #e6e6e6;
+    height: 380px;
+    width: 1px;
+    left: 5%;
+}
+
+.line3 {
+    position: absolute;
+    border-top: 3px solid #4989dc;
+    width: 6.3%;
+    left: -6.3%;
+    top: 20%;
+}
+
+.third {
+    display: flex;
+    position: relative;
+}
+
+.Skills {
+    position: relative;
+    left: 4%;
+    color: #6e6e6e;
+    font-size: 18px;
+}
+
+.TXT {
+    position: relative;
+    left: 5.5%;
+    color: #6e6e6e;
+
+}
+
+.skills2 {
+    position: relative;
+    left: 17%;
+    color: #6e6e6e;
+    font-size: 18px;
+
+}
+
+progress {
+    width: 450px;
+    height: 17px;
+    border-radius: 40px;
+    background-color: #ddd;
+}
+  
+progress::-webkit-progress-bar {
+    border-radius: 40px;
+    background-color: #ddd;
+}
+progress::-webkit-progress-value {
+    border-radius: 40px;
+    background-color: #4989dc;
+}
+
+.EduCard {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    height: 150px;
+    width: 80%;
+    left: 10%;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    display: inline-block;
+    border-left: 2px solid #4989dc;
+}
+
+.EducationTitle { 
+    position: relative;
+    left: 5%;
+    font-weight: 500;
+}
+
+.EducationTitle p {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.form {
+    position: relative;
+    left: 5.5%;
+}
+
+.form input {
+    border-radius: 3px;
+    height: 40px;
+    font-size: 18px;
+    color: #434a54;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #434a54;
+    background-color: #f8f9fa;
+    background-clip: padding-box;
+    border: 2px solid #dee2e6;
+    outline: none;
+    margin-right: 20px;
+
+}    
+button {
+    height: 50px;
+    position: relative;
+    left: 20%;
+    width: 150px;
+    background-color: #4989dc;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.7s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    border: #4989dc 2px solid;
+    border-radius: 25px;
+    color: #4989dc;
+}
+
+.list {
+    list-style: square;
+    font-size: 19px;
+    position: relative;
+    top: 10%;
+    left: 4%;
+    color: #6e6e6e;
+    width: 85%;
+}
