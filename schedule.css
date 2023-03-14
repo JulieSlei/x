@@ -1,3 +1,13 @@
-* {
-    font-family: 'poppins';
+
+.back {
+    position: absolute;
+    left: 2%;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 1s;
+    color: black;
+}
+
+.back:hover {
+    left: 1.5%;
 }
