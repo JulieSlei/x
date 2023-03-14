@@ -237,3 +237,17 @@ button:hover {
     color: #6e6e6e;
     width: 85%;
 }
+
+
+.back {
+    position: absolute;
+    left: 2%;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 1s;
+    color: #6e6e6e;
+}
+
+.back:hover {
+    left: 1.5%;
+}
