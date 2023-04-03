@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <p>What is the capital of France?</p>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="question1" value="a">
+            Paris
+          </label>
+          <label class="option">
+            <input type="radio" name="question1" value="b">
+            Berlin
+          </label>
+          <label class="option">
+            <input type="radio" name="question1" value="c">
+            London
+          </label>
+          <label class="option">
+            <input type="radio" name="question1" value="d">
+            Madrid
+          </label>
+        </div>
+      </div>
+      <div class="question">
+        <p>What is the highest mountain in the world?</p>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="question2" value="a">
+            Mount Fuji
+          </label>
+          <label class="option">
+            <input type="radio" name="question2" value="b">
+            Kilimanjaro
+          </label>
+          <label class="option">
+            <input type="radio" name="question2" value="c">
+            Denali
+          </label>
+          <label class="option">
+            <input type="radio" name="question2" value="d">
+            Mount Everest
+          </label>
+        </div>
+      </div>
+      <div class="question">
+        <p>What is the largest continent in the world?</p>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="question3" value="a">
+            Europe
+          </label>
+          <label class="option">
+            <input type="radio" name="question3" value="b">
+            Africa
+          </label>
+          <label class="option">
+            <input type="radio" name="question3" value="c">
+            Asia
+          </label>
+          <label class="option">
+            <input type="radio" name="question3" value="d">
+            North America
+          </label>
+        </div>
+      </div>
+      <div class="question">
+        <p>Who painted the Mona Lisa?</p>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="question4" value="a">
+            Pablo Picasso
+          </label>
+          <label class="option">
+            <input type="radio" name="question4" value="b">
+            Leonardo da Vinci
+          </label>
+          <label class="option">
+            <input type="radio" name="question4" value="c">
+            Vincent van Gogh
+          </label>
+          <label class="option">
+            <input type="radio" name="question4" value="d">
+            Claude Monet
+          </label>
+        </div>
+      </div>      
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="quiz.js"></script>
+
+</body>
+</html>
