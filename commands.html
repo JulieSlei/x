@@ -1,53 +1,208 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Commands </title>
-<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commands</title>
+  <style>
+    * {
+      font-family: Roboto, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+ </style>
+</head>
 <body>
-<h4>ls: List</h4>
-<h4>ls -a: List all</h4>
-<h4>ls -l: Long List</h4>
-<h4>ls -t: By time</h4>
-<h4>ls -S: By Size</h4>
-<h4>ls -h: Readable Format</h4>
-<h4>ls -r: Order Reversed</h4>
-<h4>ls commands can be combined ex: ls -lsh or ls -ltr</h4>
-<h4>mkdir: make directory (folder)</h4>
-<h4>cd FolderName: change directory</h4>
-<h4>cd ~: Home directory</h4>
-<h4>cd ..: cd back to parent directory</h4>
-<h4>pwd: directory path (Present Working Directory)</h4>
-<h4>cp file1 file2: copy file1 and paste it as another file called file2</h4>
-<h4>mv file1 file2: move or rename file1 to file2</h4>
-<h4>cat fileName: display a file (ex: txt --> What is written inside of it)</h4>
-<h4>more fileName: display a file a page at a time</h4>
-<h4>head fileName: Display only the first lines</h4>
-<h4>tail filename: Display only the last lines</h4>
-<h4>less fileName: view the contents of a text file one screen at a time</h4>
-<h4>rm fileName: remove a file</h4>
-<h4>rm -r: remove all files and directories</h4>
-<h4>rmdir directoryName: remove a directory</h4>
-<h4>who: list users currently logged in</h4>
-<h4>*: match any number of characters. Ex: Using ls *.txt lists all the txt files in the directory</h4>
-<h4>?: match one character: Ex: Using ls ?est.txt lists all the txt files that start with some letter and end with est</h4>
-<h4>man: command read the online manual</h4>
-<h4>page for a command</h4>
-<h4>command > fileName: redirect standard output to a file</h4>
-<h4>command >> fileName: append standard output to a file</h4>
-<h4>command < fileName: redirect standard input from a file</h4>
-<h4>command | fileName: redirect standard output from a file to become input of another file</h4>
-<h4>grep 'keyword' fileName: search a file for keywords. Ex: % / grep science science.txt</h4>
-<h4>wc fileName: count number of lines/words/characters in a file. Ex: % wc -w science.txt</h4>
-<h4>sort: sort data (numerically or alphabetically)</h4>
-<h4>file: what the file is.</h4>
-<h4>chmod user+permission fileName: change access permission</h4>
-<h4>“r” means “read only” permission</h4>
-<h4>“w” means “write” permission</h4>
-<h4>“x” means “execute” permission</h4>
-<h4>Ex: chmod a+x fileName: give execute permissions to all "a" for all, "x" for execute</h4>
-<h4>ps -u userName: Processes running</h4>
-<h4>top: cpu usage</h4>
-<h4>kill: terminate process</h4>
-<h4>wc fileName: count the characters, words, and lines in a file. The first column in the output is lines, the second is words, and the last is characters</h4>
-<h4>diff fileName1 fileName2: Compare/Show the difference between files</h4>
+<table>
+  <tr>
+    <td>ls</td>
+    <td>List</td>
+  </tr>
+  <tr>
+    <td>ls -a</td>
+    <td>List all</td>
+  </tr>
+  <tr>
+    <td>ls -l</td>
+    <td>Long List</td>
+  </tr>
+  <tr>
+    <td>ls -t</td>
+    <td>By time</td>
+  </tr>
+  <tr>
+    <td>ls -S</td>
+    <td>By Size</td>
+  </tr>
+  <tr>
+    <td>ls -h</td>
+    <td>Readable Format</td>
+  </tr>
+  <tr>
+    <td>ls -r</td>
+    <td>Order Reversed</td>
+  </tr>
+  <tr>
+    <td>ls -lsh or ls -ltr</td>
+    <td>ls commands can be combined, these two are just exampless</td>
+  </tr>
+  <tr>
+    <td>mkdir</td>
+    <td>make directory (folder)</td>
+  </tr>
+  <tr>
+    <td>cd FolderName</td>
+    <td>change directory</td>
+  </tr>
+  <tr>
+    <td>cd ~</td>
+    <td>Home directory</td>
+  </tr>
+  <tr>
+    <td>cd ..</td>
+    <td>cd back to parent directory</td>
+  </tr>
+  <tr>
+    <td>pwd</td>
+    <td>directory path (Present Working Directory)</td>
+  </tr>
+  <tr>
+    <td>cp file1 file2</td>
+    <td>copy file1 and paste it as another file called file2</td>
+  </tr>
+  <tr>
+    <td>mv file1 file2</td>
+    <td>move or rename file1 to file2</td>
+  </tr>
+  <tr>
+    <td>cat fileName</td>
+    <td>display a file (ex: txt --> What is written inside of it)</td>
+  </tr>
+  <tr>
+    <td>more fileName</td>
+    <td>display a file a page at a time</td>
+  </tr>
+  <tr>
+    <td>head fileName</td>
+    <td>Display only the first lines</td>
+  </tr>
+  <tr>
+    <td>tail filename</td>
+    <td>Display only the last lines</td>
+  </tr>
+  <tr>
+    <td>less fileName</td>
+    <td>view the contents of a text file one screen at a time</td>
+  </tr>
+  <tr>
+    <td>rm fileName</td>
+    <td>remove a file</td>
+  </tr>
+  <tr>
+    <td>rm -r</td>
+    <td>remove all files and directories</td>
+  </tr>
+  <tr>
+    <td>rmdir directoryName</td>
+    <td>remove a directory</td>
+  </tr>
+  <tr>
+    <td>who</td>
+    <td>list users currently logged in</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>match any number of characters. Ex: Using ls *.txt lists all the txt files in the directory</td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>match one character: Ex: Using ls ?est.txt lists all the txt files that start with some letter and end with est</td>
+  </tr>
+  <tr>
+    <td>man</td>
+    <td>command read the online manual page for a command</td>
+  </tr>
+  <tr>
+    <td>command > fileName</td>
+    <td>redirect standard output to a file</td>
+  </tr>
+  <tr>
+    <td>command >> fileName</td>
+    <td>append standard output to a file</td>
+  </tr>
+  <tr>
+    <td>command < fileName</td>
+    <td>redirect standard input from a file</td>
+  </tr>
+  <tr>
+    <td>command | fileName</td>
+    <td>redirect standard output from a file to become input of another file</td>
+  </tr>
+  <tr>
+    <td>grep 'keyword' fileName</td>
+    <td>search a file for keywords. Ex: % / grep science science.txt</td>
+  </tr>
+  <tr>
+    <td>wc fileName</td>
+    <td>count number of lines/words/characters in a file. Ex: % wc -w science.txt</td>
+  </tr>
+  <tr>
+    <td>sort</td>
+    <td>sort data (numerically or alphabetically)</td>
+  </tr>
+  <tr>
+    <td>file</td>
+    <td>what the file is.</td>
+  </tr>
+  <tr>
+    <td>chmod user+permission fileName</td>
+    <td>change access permission</td>
+  </tr>
+  <tr>
+    <td>chmod user/group/others/all+r fileName</td>
+    <td>“r” means “read only” permission</td>
+  </tr>
+  <tr>
+    <td>chmod user/group/others/all+w fileName</td>
+    <td>“w” means “write” permission</td>
+  </tr>
+  <tr>
+    <td>chmod user/group/others/all+x fileName</td>
+    <td>“x” means “execute” permission</td>
+  </tr>
+  <tr>
+    <td>Ex: chmod a+x fileName</td>
+    <td>give execute permissions to all "a" for all, "x" for execute</td>
+  </tr>
+  <tr>
+    <td>ps -u userName</td>
+    <td>Processes running</td>
+  </tr>
+  <tr>
+    <td>top</td>
+    <td>cpu usage</td>
+  </tr>
+  <tr>
+    <td>kill</td>
+    <td>terminate process</td>
+  </tr>
+  <tr>
+    <td>wc fileName</td>
+    <td>count the characters, words, and lines in a file. The first column in the output is lines, the second is words, and the last is characters</td>
+  </tr>
+  <tr>
+    <td>diff fileName1 fileName2</td>
+    <td>Compare/Show the difference between files</td>
+  </tr>
+</table>
 </body>
 </html>
