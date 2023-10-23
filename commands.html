@@ -52,12 +52,28 @@
     <td>Order Reversed</td>
   </tr>
   <tr>
+    <td>ls -R</td>
+    <td>Recursively lists subdirectories</td>
+  </tr>
+  <tr>
+    <td>ls > fileName</td>
+    <td>o save a list of the files in your directory to a file</td>
+  </tr>
+  <tr>
     <td>ls -lsh or ls -ltr</td>
     <td>ls commands can be combined, these two are just exampless</td>
   </tr>
   <tr>
-    <td>mkdir</td>
+    <td>ls ~/something/anotherDirectory</td>
+    <td>list files in another directory</td>
+  </tr>
+  <tr>
+    <td>mkdir FolderName</td>
     <td>make directory (folder)</td>
+  </tr>
+  <tr>
+    <td>mkdir /FolderName/subFolderName</td>
+    <td>make sub directory (folder)</td>
   </tr>
   <tr>
     <td>cd FolderName</td>
@@ -65,19 +81,51 @@
   </tr>
   <tr>
     <td>cd ~</td>
-    <td>Home directory</td>
+    <td>Home directory (using just cd does the same thing)</td>
   </tr>
   <tr>
     <td>cd ..</td>
     <td>cd back to parent directory</td>
   </tr>
   <tr>
+    <td>cd /</td>
+    <td>cd to root directory</td>
+  </tr>
+  <tr>
     <td>pwd</td>
     <td>directory path (Present Working Directory)</td>
   </tr>
   <tr>
+    <td>date</td>
+    <td>Displays the current day, date, time, and year</td>
+  </tr>
+  <tr>
+    <td>cal</td>
+    <td>show this month's calendar</td>
+  </tr>
+  <tr>
+    <td>cal 2008</td>
+    <td>show a twelve-month calendar for 2008</td>
+  </tr>
+  <tr>
+    <td>cal 6 1970</td>
+    <td>show a calendar for just the month of June 1970</td>
+  </tr>
+  <tr>
     <td>cp file1 file2</td>
     <td>copy file1 and paste it as another file called file2</td>
+  </tr>
+  <tr>
+    <td>cp -i oldfile newfile</td>
+    <td>o force the system to ask for your approval before it destroys any files (always use -i)</td>
+  </tr>
+  <tr>
+    <td>cp -i /home/Some/directory/file</td>
+    <td>copy a file from the directoy specified to the current directory</td>
+  </tr>
+  <tr>
+    <td>cp -i file ~/folder/newfile</td>
+    <td>copy file from current directory to another directory (the file here is renamed as newfile)</td>
   </tr>
   <tr>
     <td>mv file1 file2</td>
@@ -86,6 +134,18 @@
   <tr>
     <td>cat fileName</td>
     <td>display a file (ex: txt --> What is written inside of it)</td>
+  </tr>
+  <tr>
+    <td>cat file1 >> file2</td>
+    <td>append file1 onto the end of file2</td>
+  </tr>
+  <tr>
+    <td>cat file1 file2 file3 > newfile</td>
+    <td>combine several text files into a single file (This overwrites the content of the newfile)</td>
+  </tr>
+  <tr>
+    <td>cat file1 file2 file3 >> destfile</td>
+    <td>append several text files onto the end of another file</td>
   </tr>
   <tr>
     <td>more fileName</td>
@@ -104,6 +164,10 @@
     <td>view the contents of a text file one screen at a time</td>
   </tr>
   <tr>
+    <td>ls -la | less</td>
+    <td>reading the output of other commands</td>
+  </tr>
+  <tr>
     <td>rm fileName</td>
     <td>remove a file</td>
   </tr>
@@ -114,6 +178,10 @@
   <tr>
     <td>rmdir directoryName</td>
     <td>remove a directory</td>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>list users currently logged in</td>
   </tr>
   <tr>
     <td>who</td>
@@ -138,6 +206,10 @@
   <tr>
     <td>man</td>
     <td>command read the online manual page for a command</td>
+  </tr>
+  <tr>
+    <td>man -k keyword</td>
+    <td>see one line summaries of each reference page that contains the keyword specified</td>
   </tr>
   <tr>
     <td>command > fileName</td>
@@ -192,6 +264,14 @@
     <td>give execute permissions to all "a" for all, "x" for execute</td>
   </tr>
   <tr>
+    <td>chmod numbers (not a command)</td>
+    <td>4: read(r), 2: write(w), 1: execute(x) (Can be mixed) </td>
+  </tr>
+  <tr>
+    <td>Ex: chmod 751 fileName</td>
+    <td>Give the the owner (first digit) Read Write execute, the group (second) read and execute and others (third digit) only execute</td>
+  </tr>
+  <tr>
     <td>ps -u userName</td>
     <td>Processes running</td>
   </tr>
@@ -202,6 +282,14 @@
   <tr>
     <td>kill</td>
     <td>terminate process</td>
+  </tr>
+  <tr>
+    <td>kill %3</td>
+    <td> destroy any jobs or programs that you suspended and are unable to restart (job 3 for example)</td>
+  </tr>
+  <tr>
+    <td>kill -9 %3</td>
+    <td>Harsher measures to cancel a job (there is a list for what the numbers do (9 is SIGKILL))</td>
   </tr>
   <tr>
     <td>wc fileName</td>
@@ -216,12 +304,28 @@
     <td>Disk Usage</td>
   </tr>
   <tr>
+    <td>du -k</td>
+    <td>Show size in kilobytes</td>
+  </tr>
+  <tr>
     <td>df</td>
-    <td>Disk Filling (summarizes the amount of disk space in use)</td>
+    <td>Disk Filling (summarizes the amount of disk space in use) (the number of blocks used)</td>
+  </tr>
+  <tr>
+    <td>df -k</td>
+    <td>show blocks in kilobytes</td>
   </tr>
   <tr>
     <td>uptime</td>
     <td>Tells how long a system has been running</td>
+  </tr>
+  <tr>
+    <td>ifconfig</td>
+    <td>view all active network interfaces</td>
+  </tr>
+  <tr>
+    <td>ifconfig -a</td>
+    <td>view all network interfaces, active and inactive</td>
   </tr>
   <tr>
     <td>adduser newuser</td>
@@ -246,6 +350,14 @@
   <tr>
     <td>deluser --remove-home newuser</td>
     <td>Delete the user's Home directory (requires Sudo)</td>
+  </tr>
+  <tr>
+    <td>jobs</td>
+    <td>Show the list of suspended jobs</td>
+  </tr>
+  <tr>
+    <td>%2</td>
+    <td>restart job 2 for example</td>
   </tr>
 </table>
 </body>
